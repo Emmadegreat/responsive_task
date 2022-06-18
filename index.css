@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wgt@400;500;600;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    
+}
+header{/*----------------Header-------------------*/
+    background: #1d3044;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.5rem;
+    font-family: 'Lexend Deca', sans-serif;
+}/*----------------Header end-------------------*/
+
+
+footer{/*----------------footer-------------------*/
+    height: 60px;
+    background: #1d3044;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Lexend Deca', sans-serif;
+}
+footer span{
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: 'Lexend Deca', sans-serif;
+}/*----------------footer end-------------------*/
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: url("./images/bg-intro-mobile.png");
+    background-color:hsl(0, 100%, 74%);
+}
+.form__layout{
+    padding: 2rem;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.left__side{
+    flex: 1;
+    margin-bottom: 3.5rem;
+    color: whitesmoke;
+}
+.left__side h1{
+    margin-bottom: 2rem;
+    line-height: 2rem;
+    font-size: 2rem;  
+}
+
+.left__side p{
+    max-width: 470px;
+    font-size: 1.25rem;
+    line-height: 1.7;
+}
+
+.registration__form{
+    flex: 1;
+}
+.top{
+    width: 100%;
+    height: 3.5rem;
+    padding: 0.5rem;
+    line-height: 1;
+    border-radius: 0.4rem;
+    margin-bottom: 1.3rem;
+    font-size: 1rem;
+    background: hsl(248, 32%, 49%);
+    color:gainsboro;
+    box-shadow: 0 0.3rem hsla(249, 10%, 26%, 0.404);
+    border-style: none;
+    cursor: pointer;
+}
+.top small{
+    color: #fff;
+}
+.form{
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.3rem hsla(249, 10%, 26%, 0.404);
+}
+.form__element{
+    position: relative;
+}
+.inputbox{
+    width: 100%;
+    height: 3rem;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    border: 1px solid gray;
+}
+.inputbox::placeholder{
+    color: gray;
+}
+#bottom__button{
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    line-height: 0.8;
+    background: hsl(154, 59%, 51%);
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+}
+span{
+    font-size: 0.7rem;
+    color:hsl(249, 10%, 26%)
+}
+
+span a{
+    color: tomato;
+    text-decoration: none;
+}
+.error__image,.error__message{
+    display: none;
+}
+
+
+.error__image{/*---------error image----------*/
+    position: absolute;
+    display: none;
+    right: 320px;
+    margin-top: -2.3rem;
+}
+
+.error__message{/*---------error image----------*/
+    display: block;
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    margin-right: 4rem;
+    display: none;
+}    
+
+@media screen and (min-width:1000px) {
+    main{
+        background: url("./images/bg-intro-desktop.png");
+        background-color:hsl(0, 100%, 74%);
+    }
+    .form__layout{
+        flex-direction: row;
+    }
+    .left__side{
+        text-align: justify;
+        padding: 5rem;
+        margin-bottom: 3.5rem;
+        color: whitesmoke;
+    }
+    .left__side h1{
+        margin-bottom: 2rem;
+        line-height: 3.5rem;
+        font-size: 3rem;  
+    }
+    .left__side p{
+        font-size: 1.4rem;
+        line-height: 2.5rem; 
+        padding-right: 2rem;
+        max-width: 600px;
+    }
+    .registration__form{
+        max-width: 500px;
+    }
+
+    .registration__form .top{
+        height: 4.5rem;
+        line-height: 3;
+    }
+    .top p{
+        font-size: 1.3rem;
+    }
+    .top small{
+        color: #fff;
+    }
+    .form{
+        background-color: #fff;
+        padding: 1.5rem;
+        border-radius: 0.4rem;
+        box-shadow: 0 0.3rem hsla(249, 10%, 26%, 0.404);
+    } 
+
+    .registration__form .form__element{
+        padding-bottom: 1rem;
+    }
+    .inputbox::placeholder{
+        color: gray;
+        font-size: 1.2rem;
+    }
+    .form #bottom__button{
+       font-size: 1rem;
+       height: 4rem;
+       margin-bottom: -5rem;
+    }
+
+    .form span{
+        font-size: 0.8rem;
+        color:gray;
+    }
+
+    span a{
+        color: tomato;
+        text-decoration: none;
+    }
+    footer span{
+        font-size: 1.5rem;
+    }
+
+    header{
+        font-size: 1rem;
+    }
+
+    .error__image{/*---------error image----------*/
+        position: absolute;
+        display: block;
+        right: 20px;
+        margin-top: -2.3rem;
+        
+    }
+
+    .error__message{/*---------error image----------*/
+        display: block;
+    }    
+    
+
+}

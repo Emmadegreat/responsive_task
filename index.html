@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-Reg-Form</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./images/favicon-32x32.png">
+</head>
+<body>
+    <header><!------------Header--------->
+        <h1>Responsive Registration Form</h1>
+    </header>
+
+    <main><!-------------main---------->
+        <div class="form__layout">
+            <div class="left__side">
+                <h1>Learn to code by <br> watching others</h1>
+                <p>See how experienced developers solve problems in real-time. Watching 
+                    scripted tutorials is great, but understanding how developers think 
+                    is invaluable.
+                </p>
+            </div>
+            <div class="registration__form">
+
+                <div class="top">
+                    <p><b>Try it Free 7 days</b> then 20$/mo. thereafter</p>
+                </div>
+                <div class="form">
+                    <form action="#" method="POST">
+                        <div class="form__element">
+                            <input type="text" name="firstName" id="first__name" class="inputbox" placeholder="Firstname" required>
+                            <img src="./images/icon-error.svg" alt="img" class="error__image">
+                            <p class="error__message">Firstname field will not be blank</p>
+                        </div><br>
+
+                        <div class="form__element">
+                            <input type="text" name="lastName" id="last__name" class="inputbox" placeholder="Lastname" required>
+                            <img src="./images/icon-error.svg" alt="img" class="error__image">
+                            <p class="error__message">Lastname field will not be blank</p>
+                        </div><br>
+
+                        <div class="form__element">
+                            <input type="email" name="email" id="email" class="inputbox" placeholder="Email" required>
+                            <img src="./images/icon-error.svg" alt="img" class="error__image">
+                            <p class="error__message">Email field will not be blank</p>
+                        </div><br>
+
+                        <div class="form__element">
+                            <input type="password" name="password" id="password" class="inputbox" placeholder="Password" required>
+                            <img src="./images/icon-error.svg" alt="img" class="error__image">
+                            <p class="error__message">Password field will not be blank</p>
+                        </div><br>
+
+                        <div class="form__element">
+                            <a href="#"><button required id="bottom__button">claim your free trial</button></a>
+                        </div><br>
+                        <span>By clicking the button you are agreeing to our <a href="#">Terms and Services</a></span>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer><!------footer----------->
+        <span>&COPY; EMFCONZULT</span>&nbsp;&nbsp;
+        <span> 2022</span>&nbsp;&nbsp;
+        <span>ZURITEAM</span>
+    </footer>
+    <!-----------------------the action of the error__image and error__message 
+    will be triggered with javascript. Though here it has been styled by css-->
+</body>
+</html>

@@ -145,7 +145,11 @@ main{/*-------------------mobile first---------------------*/
     color: hsl(0, 100%, 74%);
     font-style: italic;
     margin-right: 4rem;
-}    
+}   
+
+.form__element.error .error__image, .form__element.error .error__message{
+    display:block;
+}
 
 /*--------------------------media query-----------------------*/
 @media screen and (min-width:1050px) {
